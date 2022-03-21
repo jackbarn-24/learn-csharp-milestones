@@ -88,7 +88,7 @@ Control Flow and Collection Types (65–93)
 		- [X] Write a nested `if` statement
 		- [X] Write a `switch` statement
 	- [X] Collections
-		- [X] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **green**
+		- [X] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **There will be an error because it is an int array full of strings. If it were a string array, it would return green.**
 		- [X] Write an Array of the type `int[]`
 		- [X] Write a List of the type `List<string>`
 		- [X] Write a Dictionary of the type `Dictionary<string, int>`
@@ -162,7 +162,7 @@ Movement, Camera Controls, and Collisions (149–175)
 - [X] Physics and Collisions
 	- [X] Use `FixedUpdate()` to control game objects using Unity's physics engine
 	- [X] Apply physics forces to a game object RigidBody using `MovePosition()`
-	- [X] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **??**
+	- [X] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **No.**
 	- [X] Use `OnCollisionEnter()` to check if a game object has run into another collider
 	- [X] Use `Destroy()` to remove a game object from the scene
 	- [X] Use `OnTriggerEnter()` and `OnTriggerExit()` to detect when two colliders start and stop touching
@@ -175,15 +175,15 @@ Movement, Camera Controls, and Collisions (149–175)
 Scripting Game Mechanics (176–207)
 
 - Character Control
-	- [ ] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
-	- [ ] Use `AddForce()` to make a character jump
-	- [ ] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
-- [ ] Add a shooting mechanic
-	- [ ] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
-	- [ ] Instantiate the projectile on click and destroy it after `3` seconds
-- [ ] Create a GameManager
- 	- [ ] Use `get` and `set` properties to return and assign properties that are used across the game
-- [ ] Add a simple UI to inform the user of game state(s)
-	- [ ] Add text to show the health and items counts to the user
-	- [ ] Add a win condition to the game and display it in the UI
-	- [ ] Use `Time.timeScale = 0` to pause the game
+	- [X] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
+	- [X] Use `AddForce()` to make a character jump
+	- [X] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
+- [X] Add a shooting mechanic
+	- [X] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
+	- [X] Instantiate the projectile on click and destroy it after `3` seconds
+- [X] Create a GameManager
+ 	- [X] Use `get` and `set` properties to return and assign properties that are used across the game
+- [X] Add a simple UI to inform the user of game state(s)
+	- [X] Add text to show the health and items counts to the user
+	- [X] Add a win condition to the game and display it in the UI
+	- [X] Use `Time.timeScale = 0` to pause the game
